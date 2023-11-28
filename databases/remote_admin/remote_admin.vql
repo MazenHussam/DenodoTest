@@ -1,0 +1,11 @@
+﻿ALTER DATABASE "Remote_admin"
+  CHARSET DEFAULT;
+
+ALTER DATABASE "Remote_admin"
+  AUTHENTICATION LOCAL
+  CACHE ON (
+    MAINTENANCE OFF
+    TIMETOLIVE 0
+    DATASOURCE postgresusecase DATABASE admin
+  );
+
